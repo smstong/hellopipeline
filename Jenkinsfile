@@ -7,6 +7,9 @@ pipeline {
             }
         }
         stage('deploy') {
+            steps {
+                sh 'python --version'
+            }
         }
     }
 }
